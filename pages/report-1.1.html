@@ -214,131 +214,85 @@
 				<div class="space-y-5 py-5 px-10">
 					<!-- PAGE TITLE -->
                     <div class="space-y-7 flex flex-col">
-                        <h1 class="text-gray-100 font-[600]">User Management</h1>
-                        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-3">
-                            <div class="flex items-center gap-3">
-                                <a href="user-management-parent-view-1.2.html" class="bg-white rounded-full w-8 h-8 flex items-center justify-center cursor-pointer">
-                                    <img src="../assets/icons/arrow-left.svg" alt="Icon" class="size-4">
-                                </a>
-                                <h6 class="text-gray-100 font-[600]">View Children Details</h6>
-                            </div>
-                        </div>
+                        <h1 class="text-gray-100 font-[600]">Report</h1>
                     </div>
 
 					<!-- PAGE CONTENT -->
-					<div class="space-y-10">
-                        <!-- STUDENT DETAIL -->
-                        <div class="rounded-[21px] border border-[#2A2A2A] h-full">
-                            <div class="rounded-t-[21px] bg-[#2C2C2C] py-3 px-8">
-                                <span>Children Details</span>
-                            </div>
-                            <div class="grid grid-cols-7 gap-5 p-5">
-                                <div class="col-span-7 lg:col-span-1 flex items-center justify-center">
-                                    <div class="bg-gray-50 rounded-full w-[109px] h-[109px] flex items-center justify-center">
-                                        <img src="../assets/icons/student-black.svg" alt="Icon" class="w-10 text-black">
-                                    </div>
-                                </div>
-                                <div class="col-span-7 lg:col-span-6">
-                                    <div class="grid grid-cols-2 gap-5">
-                                        <div class="col-span-2 flex flex-col">
-                                            <span class="text-gray-200">Student Name</span>
-                                            <span class="text-[#EAEAEA]">Nur Aliyah Long Long Name Long Name Long Name Long</span>
-                                        </div>
-                                        <div class="col-span-2 lg:col-span-1 flex flex-col">
-                                            <span class="text-gray-200">Email</span>
-                                            <span class="text-[#EAEAEA]">nuraliyah@gmail.com</span>
-                                        </div>
-                                        <div class="col-span-2 lg:col-span-1 flex flex-col">
-                                            <span class="text-gray-200">Status Account</span>
-                                            <span class="text-green-100">Active</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+					<div class="space-y-10 divide-y divide-gray-200">
+						<div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-8">
+							<!-- Card: Revenue -->
+							<div class="lg:col-span-1 rounded-[20px] border border-[#2A2A2A] bg-[#1A1A1A] p-5 lg:p-7 flex flex-col">
+								<p class="text-gray-100">Revenue</p>
+								<p class="text-gray-200 mt-3">12 Jun 2025</p>
+								<p class="text-green-100 text-xl font-semibold mt-1">RM1,234.56</p>
+								<div class="mt-6">
+									<a href="#" class="block w-full bg-white hover:bg-gray-200 text-black font-semibold rounded-full py-3 text-center">View Subscription</a>
+								</div>
+							</div>
 
-						<!-- TABLE SECTION -->
-                        <div class="space-y-5">
-                            <!-- TABLE SEARCH -->
-                            <div class="flex items-center justify-between gap-3">
-                                <div>
-                                    <h6 class="font-[600]">Subscription Payment History</h6>
-                                    <p class="text-gray-910">Math</p>
-                                </div>
-                            </div>
+							<!-- Card: Student Performance -->
+							<div class="lg:col-span-2 rounded-[20px] border border-[#2A2A2A] bg-[#1A1A1A] p-5 lg:p-7 flex flex-col">
+								<p class="text-gray-100">Student Performance</p>
+								<div class="grid grid-cols-2 gap-5 mt-4">
+									<div>
+										<p class="text-gray-200">Quiz Score</p>
+										<div class="mt-1 flex items-center gap-2">
+											<img src="../assets/icons/quiz.svg" alt="Icon" class="size-6">
+											<span class="text-white font-semibold">89%</span>
+										</div>
+									</div>
+									<div>
+										<p class="text-gray-200">Subject Progress</p>
+										<div class="mt-1 flex items-center gap-2">
+											<img src="../assets/icons/books.svg" alt="Icon" class="size-6">
+											<span class="text-white font-semibold">87%</span>
+										</div>
+									</div>
+								</div>
+								<div class="mt-6">
+									<a href="#" class="block w-full bg-white hover:bg-gray-200 text-black font-semibold rounded-full py-3 text-center">View Performance</a>
+								</div>
+							</div>
 
-                            <!-- START : TABLE -->
-                            <div class="overflow-x-auto border border-[#424242] rounded-[12px] mb-10">
-                                <table
-                                    class="min-w-full border border-[#424242] rounded-[12px] overflow-hidden text-sm text-left">
-                                    <thead class="bg-gray-800 text-gray-200">
-                                        <tr>
-                                            <th class="p-4 border border-[#424242]">No</th>
-                                            <th class="p-4 border border-[#424242]">Class Group</th>
-                                            <th class="p-4 border border-[#424242]">Tutor Name</th>
-                                            <th class="p-4 border border-[#424242]">Start Date Subscription</th>
-                                            <th class="p-4 border border-[#424242]">End Date Subscription</th>
-                                            <th class="p-4 border border-[#424242]">Amount</th>
-                                            <th class="p-4 border border-[#424242]">Payment Date</th>
-                                            <th class="p-4 border border-[#424242]">Payment Status</th>
-                                            <th class="p-4 border border-[#424242]">Payment Method</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="bg-gray-900 divide-y divide-gray-800 text-gray-50">
-                                        <tr class="odd:bg-[#141414] even:bg-[#171717]">
-                                            <td class="p-4 border border-gray-700">1</td>
-                                            <td class="p-4 border border-gray-700">
-                                                Group A
-                                                <p class="text-[#4E4B4B]">Form 4</p>
-                                            </td>
-                                            <td class="p-4 border border-gray-700">Sir Long Long  NName Long..</td>
-                                            <td class="p-4 border border-gray-700">1 Jan 2025</td>
-                                            <td class="p-4 border border-gray-700">1 Mac 2025</td>
-                                            <td class="p-4 border border-gray-700">RM123.45</td>
-                                            <td class="p-4 border border-gray-700">1 Jan 2025</td>
-                                            <td class="p-4 border border-gray-700 text-green-100">Active</td>
-                                            <td class="p-4 border border-gray-700">FPX</td>
-                                        </tr>
-                                        <tr class="odd:bg-[#141414] even:bg-[#171717]">
-                                            <td class="p-4 border border-gray-700">2</td>
-                                            <td class="p-4 border border-gray-700">
-                                                Group A
-                                                <p class="text-[#4E4B4B]">Form 4</p>
-                                            </td>
-                                            <td class="p-4 border border-gray-700">Sir Long Long  NName Long..</td>
-                                            <td class="p-4 border border-gray-700">1 Jan 2025</td>
-                                            <td class="p-4 border border-gray-700">1 Mac 2025</td>
-                                            <td class="p-4 border border-gray-700">RM123.45</td>
-                                            <td class="p-4 border border-gray-700">1 Jan 2025</td>
-                                            <td class="p-4 border border-gray-700 text-[#FF2147]">Overdue</td>
-                                            <td class="p-4 border border-gray-700">FPX</td>
-                                        </tr>
-                                        <tr class="odd:bg-[#141414] even:bg-[#171717]">
-                                            <td class="p-4 border border-gray-700">2</td>
-                                            <td class="p-4 border border-gray-700">
-                                                Group A
-                                                <p class="text-[#4E4B4B]">Form 4</p>
-                                            </td>
-                                            <td class="p-4 border border-gray-700">Sir Long Long  NName Long..</td>
-                                            <td class="p-4 border border-gray-700">1 Jan 2025</td>
-                                            <td class="p-4 border border-gray-700">1 Mac 2025</td>
-                                            <td class="p-4 border border-gray-700">RM123.45</td>
-                                            <td class="p-4 border border-gray-700">1 Jan 2025</td>
-                                            <td class="p-4 border border-gray-700 text-[#B77100]">Refunded</td>
-                                            <td class="p-4 border border-gray-700">FPX</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <!-- END : TABLE -->
-                        </div>
+							<!-- Card: Replay Usage -->
+							<div class="lg:col-span-1 rounded-[20px] border border-[#2A2A2A] bg-[#1A1A1A] p-5 lg:p-7 flex flex-col">
+								<p class="text-gray-100">Replay Usage</p>
+								<p class="text-gray-200 mt-4">Replays Watched</p>
+								<div class="mt-1 flex items-center gap-2">
+									<img src="../assets/icons/replay.svg" alt="Icon" class="size-6">
+									<span class="text-white font-semibold">87%</span>
+								</div>
+								<div class="mt-6">
+									<a href="#" class="block w-full bg-white hover:bg-gray-200 text-black font-semibold rounded-full py-3 text-center">View Report</a>
+								</div>
+							</div>
+
+                            <!-- Card: Class Attendance -->
+                            <div class="lg:col-span-2 rounded-[20px] border border-[#2A2A2A] bg-[#1A1A1A] p-5 lg:p-7">
+								<p class="text-gray-100">Class Attendance</p>
+								<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-4">
+									<div>
+										<p class="text-gray-300 text-sm">Top Class Attendance</p>
+										<p class="text-white font-semibold mt-1">Group A - Form 2</p>
+									</div>
+									<div>
+										<p class="text-gray-300 text-sm">Low Class Attendance</p>
+										<p class="text-white font-semibold mt-1">Group A - Form 3</p>
+									</div>
+								</div>
+								<div class="mt-6">
+									<a href="#" class="block w-full bg-white hover:bg-gray-200 text-black font-semibold rounded-full py-3 text-center">View Attendance</a>
+								</div>
+							</div>
+						</div>
 					</div>
+
 				</div>
 				<!-- END : CONTENT -->
 			</div>
 			<!-- END : WRAPPER -->
 		</div>
-	</section>
+<!-- ... -->
 	<!-- END : SECTION -->
 
 	<!-- START : JS -->

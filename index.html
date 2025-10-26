@@ -12,14 +12,14 @@
 		rel="stylesheet" />
 	<!-- TAILWINDCSS -->
 	<script src="https://cdn.tailwindcss.com"></script>
-	<script src="../assets/js/tailwind.config.js"></script>
+	<script src="./assets/js/tailwind.config.js"></script>
 	<!-- ICONIFY -->
 	<script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
 	<!-- SWIPERJS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<!-- INTERNAL CSS -->
-	<link rel="stylesheet" href="../assets/css/app.css" />
+	<link rel="stylesheet" href="./assets/css/app.css" />
 </head>
 <body>
     <!-- START : NAVBAR -->
@@ -31,7 +31,7 @@
 				<button id="openSidebarBtn" class="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-md hover:bg-zinc-200 focus:outline-none" aria-label="Open sidebar">
 					<iconify-icon icon="majesticons:menu" width="22" height="22"></iconify-icon>
 				</button>
-				<img src="../assets/images/mcp-logo.png" alt="" class="h-16" />
+				<img src="./assets/images/mcp-logo.png" alt="" class="h-16" />
 			</div>
 			<!-- PROFILE AREA -->
 			<div class="flex items-center space-x-3">
@@ -57,7 +57,7 @@
 		<div class="h-full flex flex-col">
 			<div class="flex items-center justify-between px-4 h-16 border-b border-white/10">
 				<div class="flex items-center gap-2">
-					<img src="../assets/images/mcp-logo.png" alt="" class="h-10" />
+					<img src="./assets/images/mcp-logo.png" alt="" class="h-10" />
 					<span class="text-sm font-semibold">Menu</span>
 				</div>
 				<button id="closeSidebarBtn" class="inline-flex w-9 h-9 items-center justify-center rounded-md hover:bg-white/10" aria-label="Close sidebar">
@@ -213,125 +213,151 @@
 				<!-- START : CONTENT -->
 				<div class="space-y-5 py-5 px-10">
 					<!-- PAGE TITLE -->
-                    <div class="space-y-7 flex flex-col">
-                        <h1 class="text-gray-100 font-[600]">User Management</h1>
-                        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-3">
-                            <div class="flex items-center gap-3">
-                                <a href="user-management-parent-view-1.2.html" class="bg-white rounded-full w-8 h-8 flex items-center justify-center cursor-pointer">
-                                    <img src="../assets/icons/arrow-left.svg" alt="Icon" class="size-4">
-                                </a>
-                                <h6 class="text-gray-100 font-[600]">View Children Details</h6>
-                            </div>
-                        </div>
+                    <div>
+                        <h1 class="text-gray-100 font-[600]">Page List</h1>
                     </div>
 
 					<!-- PAGE CONTENT -->
-					<div class="space-y-10">
-                        <!-- STUDENT DETAIL -->
-                        <div class="rounded-[21px] border border-[#2A2A2A] h-full">
-                            <div class="rounded-t-[21px] bg-[#2C2C2C] py-3 px-8">
-                                <span>Children Details</span>
-                            </div>
-                            <div class="grid grid-cols-7 gap-5 p-5">
-                                <div class="col-span-7 lg:col-span-1 flex items-center justify-center">
-                                    <div class="bg-gray-50 rounded-full w-[109px] h-[109px] flex items-center justify-center">
-                                        <img src="../assets/icons/student-black.svg" alt="Icon" class="w-10 text-black">
-                                    </div>
-                                </div>
-                                <div class="col-span-7 lg:col-span-6">
-                                    <div class="grid grid-cols-2 gap-5">
-                                        <div class="col-span-2 flex flex-col">
-                                            <span class="text-gray-200">Student Name</span>
-                                            <span class="text-[#EAEAEA]">Nur Aliyah Long Long Name Long Name Long Name Long</span>
-                                        </div>
-                                        <div class="col-span-2 lg:col-span-1 flex flex-col">
-                                            <span class="text-gray-200">Email</span>
-                                            <span class="text-[#EAEAEA]">nuraliyah@gmail.com</span>
-                                        </div>
-                                        <div class="col-span-2 lg:col-span-1 flex flex-col">
-                                            <span class="text-gray-200">Status Account</span>
-                                            <span class="text-green-100">Active</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+					<div>
+						<!-- PAGE LIST -->
+                        <ul class="list-disc pl-5">
+                            <li>
+                                <span>Dashboard</span>
+                                <ul class="list-circle pl-5">
+                                    <li class="flex items-center">
+                                        <svg class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 shrink-0"
+                                        aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                        </svg>
+                                        <a href="./pages/dashboard-1.1.html">Dashboard 1.1</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>User Management</span>
+                                <ul class="list-circle pl-5">
+                                    <li class="flex items-center">
+                                        <span>Student</span>
+                                    </li>
+                                    <li>
+                                        <span>Parent</span>
+                                        <ul class="list-circle pl-5">
+                                            <li class="flex items-center">
+                                                <svg class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 shrink-0"
+                                                aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                fill="currentColor"
+                                                viewBox="0 0 20 20">
+                                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                                </svg>
+                                                <a href="./pages/user-management-parent-view-1.1.html">Parent View 1.1</span>
+                                            </li>
+                                            <li class="flex items-center">
+                                                <svg class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 shrink-0"
+                                                aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                fill="currentColor"
+                                                viewBox="0 0 20 20">
+                                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                                </svg>
+                                                <a href="./ pages/user-management-parent-edit-1.1.html">Parent Edit 1.1</span>
+                                            </li>
+                                            <li class="flex items-center">
+                                                <a href="./pages/user-management-parent-edit-1.2.html">Parent Edit 1.2</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <span>Tutor</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>Subscriptions</span>
+                                <ul class="list-circle pl-5">
+                                    <li class="flex items-center">
+                                        <svg class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 shrink-0"
+                                        aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                        </svg>
+                                        <a href="./pages/subscription-view-1.1.html">Subscriptions View 1.1</a>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 shrink-0"
+                                        aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                        </svg>
+                                        <a href="./pages/subscription-view-1.2.html">Subscriptions View 1.2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>Classes</span>
+                                <ul class="list-circle pl-5">
+                                    <li class="flex items-center">
+                                        <svg class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 shrink-0"
+                                        aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                        </svg>
+                                        <a href="./pages/classes-view-1.1.html">Classes View 1.1</a>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 shrink-0"
+                                        aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                        </svg>
+                                        <a href="./pages/classes-edit-1.1.html">Classes Edit 1.1</a>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 shrink-0"
+                                        aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                        </svg>
+                                        <a href="./pages/classes-edit-1.2.html">Classes Edit 1.2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>Study Materials</span>
+                            </li>
+                            <li>
+                                <span>Report</span>
+                                <ul class="list-circle pl-5">
+                                    <li class="flex items-center">
+                                        <svg class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 shrink-0"
+                                        aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                        </svg>
+                                        <a href="./pages/report-1.1.html">Report View 1.1</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>Customer Support</span>
+                            </li>
+                        </ul>
 
-						<!-- TABLE SECTION -->
-                        <div class="space-y-5">
-                            <!-- TABLE SEARCH -->
-                            <div class="flex items-center justify-between gap-3">
-                                <div>
-                                    <h6 class="font-[600]">Subscription Payment History</h6>
-                                    <p class="text-gray-910">Math</p>
-                                </div>
-                            </div>
-
-                            <!-- START : TABLE -->
-                            <div class="overflow-x-auto border border-[#424242] rounded-[12px] mb-10">
-                                <table
-                                    class="min-w-full border border-[#424242] rounded-[12px] overflow-hidden text-sm text-left">
-                                    <thead class="bg-gray-800 text-gray-200">
-                                        <tr>
-                                            <th class="p-4 border border-[#424242]">No</th>
-                                            <th class="p-4 border border-[#424242]">Class Group</th>
-                                            <th class="p-4 border border-[#424242]">Tutor Name</th>
-                                            <th class="p-4 border border-[#424242]">Start Date Subscription</th>
-                                            <th class="p-4 border border-[#424242]">End Date Subscription</th>
-                                            <th class="p-4 border border-[#424242]">Amount</th>
-                                            <th class="p-4 border border-[#424242]">Payment Date</th>
-                                            <th class="p-4 border border-[#424242]">Payment Status</th>
-                                            <th class="p-4 border border-[#424242]">Payment Method</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="bg-gray-900 divide-y divide-gray-800 text-gray-50">
-                                        <tr class="odd:bg-[#141414] even:bg-[#171717]">
-                                            <td class="p-4 border border-gray-700">1</td>
-                                            <td class="p-4 border border-gray-700">
-                                                Group A
-                                                <p class="text-[#4E4B4B]">Form 4</p>
-                                            </td>
-                                            <td class="p-4 border border-gray-700">Sir Long Long  NName Long..</td>
-                                            <td class="p-4 border border-gray-700">1 Jan 2025</td>
-                                            <td class="p-4 border border-gray-700">1 Mac 2025</td>
-                                            <td class="p-4 border border-gray-700">RM123.45</td>
-                                            <td class="p-4 border border-gray-700">1 Jan 2025</td>
-                                            <td class="p-4 border border-gray-700 text-green-100">Active</td>
-                                            <td class="p-4 border border-gray-700">FPX</td>
-                                        </tr>
-                                        <tr class="odd:bg-[#141414] even:bg-[#171717]">
-                                            <td class="p-4 border border-gray-700">2</td>
-                                            <td class="p-4 border border-gray-700">
-                                                Group A
-                                                <p class="text-[#4E4B4B]">Form 4</p>
-                                            </td>
-                                            <td class="p-4 border border-gray-700">Sir Long Long  NName Long..</td>
-                                            <td class="p-4 border border-gray-700">1 Jan 2025</td>
-                                            <td class="p-4 border border-gray-700">1 Mac 2025</td>
-                                            <td class="p-4 border border-gray-700">RM123.45</td>
-                                            <td class="p-4 border border-gray-700">1 Jan 2025</td>
-                                            <td class="p-4 border border-gray-700 text-[#FF2147]">Overdue</td>
-                                            <td class="p-4 border border-gray-700">FPX</td>
-                                        </tr>
-                                        <tr class="odd:bg-[#141414] even:bg-[#171717]">
-                                            <td class="p-4 border border-gray-700">2</td>
-                                            <td class="p-4 border border-gray-700">
-                                                Group A
-                                                <p class="text-[#4E4B4B]">Form 4</p>
-                                            </td>
-                                            <td class="p-4 border border-gray-700">Sir Long Long  NName Long..</td>
-                                            <td class="p-4 border border-gray-700">1 Jan 2025</td>
-                                            <td class="p-4 border border-gray-700">1 Mac 2025</td>
-                                            <td class="p-4 border border-gray-700">RM123.45</td>
-                                            <td class="p-4 border border-gray-700">1 Jan 2025</td>
-                                            <td class="p-4 border border-gray-700 text-[#B77100]">Refunded</td>
-                                            <td class="p-4 border border-gray-700">FPX</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <!-- END : TABLE -->
-                        </div>
 					</div>
 				</div>
 				<!-- END : CONTENT -->
